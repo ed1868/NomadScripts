@@ -1,46 +1,59 @@
 # NomadScripts - Python Automation 
 
 
-# Good Morning Text with Daily Horoscope
+# Nomad Twitter Bots
 
-This is a Python script that sends a variation of good morning texts every day with the daily horoscope for the Leo sign. The script uses the Twilio API to send text messages and a horoscope API to fetch the daily horoscope.
+This repository contains example Python scripts for building Twitter bots with various features.
 
-# Setup
-To use this script, follow these steps:
+# Requirements
+To use these scripts, you'll need to have the following installed on your system:
 
-    1. Clone this repository to your local machine.
-    2. Install the required Python libraries by running pip install -r requirements.txt.
-    3. Obtain an API key for the Twilio API and the horoscope API.
-    4. Update the config.ini file with your Twilio account information, phone numbers, and API keys for the horoscope API.
+    * Python 3.x
+    * Tweepy library (for accessing the Twitter API)
+    * A Twitter developer account with API credentials (for authentication)
 
-# Usage
-This script will do the following:
-
-    * Run the script by running python main.py in your terminal.
-    * The script will run in the background and send a good morning text message with the daily horoscope for the Leo sign every day at 6 AM.
-
+# Automated News Feed Bot
 # Features
-    Sends a variation of good morning texts every day with the daily horoscope for the Leo sign.
-    Uses the Twilio API to send text messages.
-    Uses a horoscope API to fetch the daily horoscope for the Leo sign.
-    Randomly selects a good morning text message from a list of options.
-    Schedule the script to run at a specific time every day.
-    Easy to configure by updating the config.ini file with your API keys and phone numbers.
-
-# Configuration
-
-# The config.ini file contains the following configuration options:
-
-    twilio_account_sid: Your Twilio account SID.
-    twilio_auth_token: Your Twilio auth token.
-    from_number: Your Twilio phone number.
-    to_number: The phone number that will receive the good morning texts.
-    horoscope_api_key: Your API key for the horoscope API.
-    horoscope_api_endpoint: The endpoint URL for the horoscope API.
-    You can update these options to configure the script for your specific use case.
-
-# Limitations
-
-    The script only sends good morning texts with the daily horoscope for the Leo sign.
-    The horoscope API may have rate limits or usage limits that you need to be aware of.
-    Sending text messages through a programmatic interface like Twilio may incur additional costs.
+    *Fetches the latest news from a specified source or category
+    *Tweets the news on a regular basis at random time intervals
+# Usage
+    *Clone the repository to your local machine.
+    *Install the Tweepy library by running pip install tweepy in your command prompt.
+    *Open automated_news_feed.py in a text editor.
+    *Replace the placeholder values for the API credentials, news source, and time intervals with your own values.
+    *Save the file.
+    *Run the script by typing python automated_news_feed.py in your command prompt.
+# Event Reminder Bot
+# Features
+    *Tweets a reminder message when an upcoming event is happening in less than 2 hours
+    *Includes a donation link for a charity in the reminder message
+# Usage
+    *Clone the repository to your local machine.
+    *Install the Tweepy library by running pip install tweepy in your command prompt.
+    *Open event_reminder.py in a text editor.
+    *Replace the placeholder values for the API credentials, event date and time, message, and donation link with your own values.
+    *Save the file.
+    *Run the script by typing python event_reminder.py in your command prompt.
+# Charity Donation Bot
+# Features
+    *Tweets a donation link for a specified charity on a regular basis at random time intervals
+# Usage
+    *Clone the repository to your local machine.
+    *Install the Tweepy library by running pip install tweepy in your command prompt.
+    *Open charity_donation.py in a text editor.
+    *Replace the placeholder values for the API credentials and donation link with your own values.
+    *Save the file.
+    *Run the script by typing python charity_donation.py in your command prompt.
+# Personal Assistant Bot
+# Features
+    *Responds to users' requests for information, such as directions or recommendations
+    *Sends a response as a reply to the user's mention
+# Usage
+    *Clone the repository to your local machine.
+    *Install the Tweepy library by running pip install tweepy in your command prompt.
+    *Open personal_assistant.py in a text editor.
+    *Replace the placeholder values for the API credentials with your own values.
+    *Save the file.
+    *Run the script by typing python personal_assistant.py in your command prompt.
+# Conclusion
+That's it! These are just a few examples of what you can do with Python and the Twitter API. Feel free to modify the scripts or come up with your own ideas for Twitter bots. Remember to use the Twitter API responsibly and respect Twitter's terms of service.
